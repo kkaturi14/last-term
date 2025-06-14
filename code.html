@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>부럽이의 부러움 타겟</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>Envy Portfolio</h1>
+      <ul>
+        <li><a href="index.html">Envy</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="code.html">EnvyTarget</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <img src="img/envy_long.jpg" alt="부럽이 메인" class="main-img-large" />
+      <h2>부럽이가 부러워하는 사람들</h2>
+    </header>
+
+    <section id="envy-section">
+      <button id="resetBtn" class="reset-btn">하나도 안 부러움</button>
+
+      <div class="grid-box">
+        <template id="character-template">
+          <div class="box">
+            <h3 class="char-name"></h3>
+            <img class="sub-img char-img" />
+            <ul class="envy-points"></ul>
+            <button class="envy-btn">부러워하기</button>
+            <div class="jealous-reaction"></div>
+          </div>
+        </template>
+      </div>
+    </section>
+
+    <div class="envy-score-box">
+      <h3>현재 부러움 지수: <span id="envy-score">0</span>점</h3>
+    </div>
+
+    <footer>
+      <p>부럽이와 인사이트 아웃</p>
+    </footer>
+
+    <script src="envy.js"></script>
+  </body>
+</html>

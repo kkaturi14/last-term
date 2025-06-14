@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Jua', sans-serif;
+  background-color: #d3f8e2;
+  color: #054d44;
+  word-break: keep-all;
+}
+
+nav {
+  background-color: #8ef6e4;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.8rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #05668d;
+  font-weight: bold;
+}
+
+header {
+  text-align: center;
+  background-color: #c4fff9;
+  padding: 2rem;
+}
+
+.main-img {
+  max-width: 180px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 255, 200, 0.4);
+  margin-bottom: 1rem;
+}
+
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.grid-gallery img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+.grid-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #e6f9e9;
+}
+
+.box {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.box ul {
+  padding-left: 1.2rem;
+}
+
+.box li {
+  margin-bottom: 0.3rem;
+}
+
+.github-icon {
+  width: 40px;
+  height: 40px;
+  margin-top: 1rem;
+}
+
+.small {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 0.3rem;
+}
+
+.links a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: #05668d;
+  font-weight: bold;
+}
+
+.sub-img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 120px;
+  border-radius: 15px;
+}
+
+#about {
+  padding: 2rem;
+  background-color: #f3fcf0;
+  text-align: center;
+  line-height: 1.8;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #8ef6e4;
+  color: #05668d;
+  margin-top: 2rem;
+}
+
+.main-img-large {
+  width: 900px;
+  border-radius: 0; /* 동그라미 제거 */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1rem;
+}
+
+/* 부러워진 박스에 대한 스타일 */
+.box.envied {
+  background-color: var(--envy-color);
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* 부러워하기 버튼 */
+.envy-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s;
+}
+
+.envy-btn:hover {
+  background-color: #d3f8e2;
+}
+
+/* 초기화 버튼 */
+.reset-btn {
+  margin: 2rem auto;
+  display: block;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background-color: #f3fcf0;
+}
+
+.envy-score-box {
+  text-align: center;
+  margin: 2rem;
+  font-size: 1.4rem;
+  color: #05668d;
+}
+
+.shake {
+  animation: shake 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  transition: transform 0.2s ease;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(2px, -2px);
+  }
+  50% {
+    transform: translate(-2px, 2px);
+  }
+  75% {
+    transform: translate(2px, 2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    width: 100%;
+  }
+  nav h1 {
+    font-size: 1.5rem;
+  }
+  .main-img {
+    max-width: 120px;
+  }
+  header h2 {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+
+  .main-img-large {
+    width: 300px;
+    border-radius: 0; /* 동그라미 제거 */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1rem;
+  }
+}
